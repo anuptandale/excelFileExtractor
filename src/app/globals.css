@@ -17,27 +17,19 @@
 }
 
 .main {
-  @media(width<768px) {
-    flex-direction: column;
-  }
-
   display: flex;
 }
 
 .outerContainermobile {
-  @media(width>=768px) {
-    display: none;
-  }
 
-  height:65px;
-  width:100vw;
+
+  height: 65px;
+  width: 100vw;
   background-color: #605BFF;
 }
 
 .outerContainer {
-  @media(width<768px) {
-    display: none;
-  }
+
 
   height: 100vh;
   width: 50vw;
@@ -46,12 +38,7 @@
   /* background: linear-gradient(to bottom left, #605BFF 100%, #605BFF 50%, white 50%, white 0%); */
 }
 
-.signinmobile {
-  @media(width<768px) {
-    margin: 10px;
-  }
 
-}
 
 .base {
   margin-top: 250px;
@@ -68,42 +55,40 @@
 }
 
 .signinbox {
-  @media(width<768px) {
-    width: 100%;
-    margin-left: 50%;
-  }
 
-  @media(width<480px) {
-    width: 150%;
-    margin-left: 30%;
-  }
-
-  @media(width<375px) {
-    width: 180%;
-    margin-left: 10%;
-  }
-
-  width:100%;
+  width: 100%;
   display: flex;
   gap: 20px;
 
 }
 
-.container {
-  @media(width<768px) {
-    width: 100%;
-    margin-left: 50%;
-  }
 
-  @media(width<480px) {
-    width: 150%;
-    margin-left: 30%;
-  }
 
-  @media(width<375px) {
+@media(width<375px) {
+  .signinbox {
     width: 180%;
     margin-left: 10%;
   }
+
+  .container {
+    width: 180%;
+    margin-left: 10%;
+  }
+
+  .remobile {
+    margin-left: 70%;
+    width: 100px;
+    text-align: center;
+  }
+
+  #imageConmobile {
+    margin-left: 70%;
+    width: 100px;
+  }
+}
+
+.container {
+
 
   width: 140%;
   height: 450.8px;
@@ -151,6 +136,24 @@
 }
 
 @media(width<=768px) {
+  .outerContainer {
+    display: none;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 50%;
+  }
+
+  .signinbox {
+    width: 100%;
+    margin-left: 50%;
+  }
+
   #dashboard {
     display: none;
   }
@@ -167,15 +170,106 @@
   #formContainer {
     margin-left: 15%;
   }
-  
+
+  .remobile {
+    margin-left: 75%;
+    width: 200px;
+    text-align: center;
+  }
+
+  #imageConmobile {
+    margin-left: 75%;
+    width: 200px;
+  }
+
+  .signinmobile {
+    margin: 10px;
+  }
+
 }
+
+@media(width<=605px) {
+  #button {
+    width: 100%;
+  }
+
+  .drag {
+    width: 100%;
+  }
+
+  #formContainer {
+    margin-left: 15%;
+  }
+
+  #mobileboxfile {
+    width: 80%;
+  }
+}
+
 @media(width>768px) {
-#hello {
-  
+  #hello {
+
+    display: none;
+  }
+
+  .outerContainermobile {
     display: none;
   }
 
 }
+
+
+@media(width<480px) {
+  .remobile {
+
+    margin-left: 70%;
+    width: 200px;
+    text-align: center;
+  }
+
+  .signinbox {
+
+    width: 150%;
+    margin-left: 30%;
+  }
+
+  .container {
+    width: 150%;
+    margin-left: 30%;
+  }
+
+  #imageConmobile {
+    
+
+    margin-left: 70%;
+    width: 100px;
+  }
+}
+
+#imageConmobile {
+    
+  @media(width>768px) {
+    display: none;
+  }
+}
+
+@media(width<=425px) {
+
+  #mobileboxfile {
+    width: 100%;
+  }
+
+  .drag {
+    width: 100%;
+  }
+
+  .csv {
+    width: 100%;
+    /* gap:700px; */
+    margin-left: 20%;
+  }
+}
+
 #imageCon {
   display: flex;
   gap: 20px;
@@ -183,70 +277,31 @@
   justify-content: center;
 }
 
-.remobile {
-  @media(width<768px) {
-    margin-left: 75%;
-    width: 200px;
-    text-align: center;
-  }
 
-  @media(width<480px) {
-    margin-left: 70%;
-    width: 200px;
-    text-align: center;
-  }
+@media(width<=450px) {
 
-  @media(width<375px) {
-    margin-left: 70%;
-    width: 100px;
-    text-align: center;
-  }
-}
-
-#imageConmobile {
-  @media(width<768px) {
-    margin-left: 75%;
-    width: 200px;
-  }
-
-  @media(width<480px) {
-    margin-left: 70%;
-    width: 100px;
-  }
-
-  @media(width<375px) {
-    margin-left: 70%;
-    width: 100px;
-  }
-
-  @media(width>768px) {
-    display: none;
-  }
-}
-
-
-
-.csv {
-
-  @media(width<=450px) {
+  .csv {
     width: 100%;
     /* gap:700px; */
     margin-left: 15%;
   }
+}
 
-  @media(width<=425px) {
-    width: 100%;
-    /* gap:700px; */
-    margin-left: 20%;
-  }
-
-  @media(width<1245px) {
+@media(width<1245px) {
+  .csv {
     gap: 70%;
   }
+}
 
-  @media(width<826px) {
+@media(width<826px) {
+  .csv {
     gap: 60%;
   }
+}
+
+.csv {
+
+
 
   display: flex;
   gap: 80%;
@@ -279,13 +334,7 @@ input[type="file"] {
 }
 
 .drag {
-  @media(width<=605px) {
-    width: 100%;
-  }
 
-  @media(width<=425px) {
-    width: 100%;
-  }
 
   height: 300px;
   width: 600px;
@@ -299,9 +348,7 @@ input[type="file"] {
 }
 
 #button {
-  @media(width<=605px) {
-    width: 100%;
-  }
+
 
   width: 600px;
   height: 50px;
@@ -313,9 +360,6 @@ input[type="file"] {
 
 #formContainer {
 
-  @media(width<=605px) {
-    margin-left: 15%;
-  }
 
   width: 80vw;
   height: 80vh;
@@ -325,13 +369,8 @@ input[type="file"] {
 }
 
 #mobileboxfile {
-  @media(width<=605px) {
-    width: 80%;
-  }
 
-  @media(width<=425px) {
-    width: 100%;
-  }
+
 
   background-color: white;
   padding: 10px;

@@ -68,7 +68,7 @@ export default function Home() {
                     <Image src="/Vector 7.png" alt="discord" height={40} width={40} style={{ position: 'absolute', top: 34, left: 20 }} />
                 </div>
                 <div className="base">Base</div>
-                <div className="imageCon">
+                <div id="imageCon">
                     <Image src="/Frame 2@2x.png" alt="discord" height={180} width={180} />
                 </div>
             </div>
@@ -105,7 +105,7 @@ export default function Home() {
                         <span style={{ color: "lightgrey" }}> Already have an account?</span><Link href="/" style={{ color: "blue" }}> Login here</Link>
 
                     </div>
-                    <div className="imageConmobile">
+                    <div id="imageConmobile">
                         <Image src="/Group 7568.png" alt="discord" height={180} width={180} />
                     </div>
                 </div>
@@ -113,3 +113,4 @@ export default function Home() {
         </main>
     );
 }
+
