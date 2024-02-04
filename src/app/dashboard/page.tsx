@@ -6,7 +6,7 @@ interface type {
   id: string,
   links: string,
   prefix: string,
-  "select tag":string,
+  'select tags': string;
 }
 interface tagtype {
   [id: string]: string[];
@@ -177,7 +177,7 @@ const Dashboard = () => {
                         style={{ border: "1px solid lightgrey", borderRadius: "5px", padding: "5px" }}
                       >
                         <option value="se" >Select Tags</option>
-                        {row['select tags'].split(',').map(tag => tag.trim()).map((item, index) => {  
+                        {row['select tags'].split(',').map(tag => tag.trim()).map((item:any, index:any) => { 
                           return <option key={index} value={item}>{item}</option>
                         })}
                       </select>
