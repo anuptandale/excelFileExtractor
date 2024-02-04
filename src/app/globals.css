@@ -60,12 +60,14 @@
   font-weight: 700;
   text-align: center
 }
+
 .triangle {
   width: 300px;
   height: 200px;
   background: linear-gradient(to bottom right, #fff 0%, #fff 50%, green 50%, green 100%);
 }
-.signinbox{
+
+.signinbox {
   @media(width<768px) {
     width: 100%;
     margin-left: 50%;
@@ -75,15 +77,18 @@
     width: 150%;
     margin-left: 30%;
   }
-  
+
   @media(width<375px) {
     width: 180%;
     margin-left: 10%;
   }
+
   width:100%;
-display: flex; gap: 20px;
+  display: flex;
+  gap: 20px;
 
 }
+
 .container {
   @media(width<768px) {
     width: 100%;
@@ -99,7 +104,7 @@ display: flex; gap: 20px;
     width: 180%;
     margin-left: 10%;
   }
-  
+
   width: 140%;
   height: 450.8px;
   top: 398.88px;
@@ -133,9 +138,9 @@ display: flex; gap: 20px;
 }
 
 #dashboard {
-  @media(width<=768px){
+  /* @media(width<=768px){
     display: none;
-  }
+  } */
   width: 218px;
   height: 547px;
   display: flex;
@@ -145,6 +150,32 @@ display: flex; gap: 20px;
   background-color: white;
 }
 
+@media(width<=768px) {
+  #dashboard {
+    display: none;
+  }
+
+  #mobilehello {
+    display: none;
+  }
+
+  .csv {
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  #formContainer {
+    margin-left: 15%;
+  }
+  
+}
+@media(width>768px) {
+#hello {
+  
+    display: none;
+  }
+
+}
 #imageCon {
   display: flex;
   gap: 20px;
@@ -192,38 +223,31 @@ display: flex; gap: 20px;
     display: none;
   }
 }
-#hello{
-  @media(width>768px){
-    display: none;
-  }
 
-}
-#mobilehello{
-  @media(width<=768px){
-    display: none;
-  }
-}
+
+
 .csv {
-  @media(width<=768px){
-    width:100%;
-    margin-left: 10%;
-  }
-  @media(width<=450px){
-    width:100%;
+
+  @media(width<=450px) {
+    width: 100%;
     /* gap:700px; */
     margin-left: 15%;
   }
-  @media(width<=425px){
-    width:100%;
+
+  @media(width<=425px) {
+    width: 100%;
     /* gap:700px; */
     margin-left: 20%;
   }
-  @media(width<1245px){
+
+  @media(width<1245px) {
     gap: 70%;
   }
-  @media(width<826px){
+
+  @media(width<826px) {
     gap: 60%;
   }
+
   display: flex;
   gap: 80%;
   height: 25px;
@@ -255,12 +279,14 @@ input[type="file"] {
 }
 
 .drag {
-  @media(width<=605px){
-    width:100%;
+  @media(width<=605px) {
+    width: 100%;
   }
-  @media(width<=425px){
-    width:100%;
+
+  @media(width<=425px) {
+    width: 100%;
   }
+
   height: 300px;
   width: 600px;
   border: 2px dashed lightgrey;
@@ -273,9 +299,10 @@ input[type="file"] {
 }
 
 #button {
-  @media(width<=605px){
-    width:100%;
+  @media(width<=605px) {
+    width: 100%;
   }
+
   width: 600px;
   height: 50px;
   border-radius: 10px;
@@ -285,30 +312,33 @@ input[type="file"] {
 }
 
 #formContainer {
-  @media(width<=768px){
+
+  @media(width<=605px) {
     margin-left: 15%;
   }
-  @media(width<=605px){
-    margin-left: 15%;
-  }
+
   width: 80vw;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#mobileboxfile{
-  @media(width<=605px){
-    width:80%;
+
+#mobileboxfile {
+  @media(width<=605px) {
+    width: 80%;
   }
-  @media(width<=425px){
-    width:100%;
+
+  @media(width<=425px) {
+    width: 100%;
   }
+
   background-color: white;
-   padding: 10px;
-    border-radius: 10px;
-     width: 620px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 620px;
 }
+
 .navbar {
   display: flex;
   gap: 13%;
