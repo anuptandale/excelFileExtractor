@@ -72,7 +72,7 @@ const Dashboard = () => {
   }
   return (
     <div style={{ display: "flex", backgroundColor: "#F8FAFF" }}>
-      <div className='dashboard'>
+      <div id='dashboard'>
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", gap: "35px" }}>
           <Image src="/Logo and company.png" alt="el" height={50} width={100} />
           <div style={{ display: "flex", gap: "10px" }}>
@@ -106,30 +106,30 @@ const Dashboard = () => {
         </div>
       </div>
       <div >
-        <div className="hello">
-        <div className='csv'>
-          <div style={{ fontWeight: "700", fontSize: "20px" }}>
-            <Image src="/Logo and company.png" alt="el" height={50} width={100} />
-          </div>
-          <div style={{ display: "flex", gap: "30px" }}>
-            <Image src="/bell.png" alt="el" height={20} width={25} />
-            <Image src="/Ashish-Jadhav.jpg" alt="el" height={28} width={25} style={{ borderRadius: "50px" }} />
-          </div>
-        </div>
-        </div>
-        <div className="mobilehello">
-        <div className='csv'>
-          <div style={{ fontWeight: "700", fontSize: "20px" }}>
-            Upload CSV
-          </div>
-          <div style={{ display: "flex", gap: "30px" }}>
-            <Image src="/bell.png" alt="el" height={20} width={25} />
-            <Image src="/Ashish-Jadhav.jpg" alt="el" height={28} width={25} style={{ borderRadius: "50px" }} />
+        <div id="hello">
+          <div className='csv'>
+            <div style={{ fontWeight: "700", fontSize: "20px" }}>
+              <Image src="/Logo and company.png" alt="el" height={50} width={100} />
+            </div>
+            <div style={{ display: "flex", gap: "30px" }}>
+              <Image src="/bell.png" alt="el" height={20} width={25} />
+              <Image src="/Ashish-Jadhav.jpg" alt="el" height={28} width={25} style={{ borderRadius: "50px" }} />
+            </div>
           </div>
         </div>
+        <div id="mobilehello">
+          <div className='csv'>
+            <div style={{ fontWeight: "700", fontSize: "20px" }}>
+              Upload CSV
+            </div>
+            <div style={{ display: "flex", gap: "30px" }}>
+              <Image src="/bell.png" alt="el" height={20} width={25} />
+              <Image src="/Ashish-Jadhav.jpg" alt="el" height={28} width={25} style={{ borderRadius: "50px" }} />
+            </div>
+          </div>
         </div>
-        <div className='formContainer'>
-          <div className='mobileboxfile' >
+        <div id='formContainer'>
+          <div id='mobileboxfile' >
             <label htmlFor="inputTag">
 
               {!selectedFile && (<div className='drag' ><Image src="/xls.png" alt="el" height={48} width={55} />
@@ -143,10 +143,10 @@ const Dashboard = () => {
               )}
               <input id="inputTag" type="file" onChange={handleFileChange} />
             </label>
-            <button type='submit' className='button' onClick={handleUpload} >Upload</button>
+            <button type='submit' id='button' onClick={handleUpload} >Upload</button>
           </div>
         </div>
-        {selectedFile && buttonClicked && <div className='mostouter'>
+        {selectedFile && buttonClicked && <div id='mostouter'>
           <div style={{ marginBottom: "20px" }}>
             Uploads
           </div>
@@ -162,7 +162,7 @@ const Dashboard = () => {
                 </tr>
               </thead>
 
-              <tbody className='field'>
+              <tbody id='field'>
                 {data.map((row, index) => (
 
                   <tr key={index} style={{ borderRadius: '15px', height: "50px", backgroundColor: "white" }}>
@@ -177,14 +177,14 @@ const Dashboard = () => {
                         style={{ border: "1px solid lightgrey", borderRadius: "5px", padding: "5px" }}
                       >
                         <option value="se" >Select Tags</option>
-                        {row['select tags'].split(',').map(tag => tag.trim()).map((item:any, index:any) => { 
+                        {row['select tags'].split(',').map(tag => tag.trim()).map((item: any, index: any) => {
                           return <option key={index} value={item}>{item}</option>
                         })}
                       </select>
                     </td>
-                    <td className='alltags' >{
+                    <td id='alltags' >{
                       tags[row.id]?.map((item, index) => {
-                        return <div key={index} className='itemseach'>
+                        return <div key={index} id='itemseach'>
                           <div>{item}</div>
                           <div onClick={() => handleCross(item, row.id)}><Image src="/close.png" alt="el" height={10} style={{ cursor: "pointer" }} width={10} /></div></div>
                       })

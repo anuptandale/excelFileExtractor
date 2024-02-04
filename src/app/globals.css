@@ -132,7 +132,7 @@ display: flex; gap: 20px;
   background: linear-gradient(to left, white 60%, blue 100%);
 }
 
-.dashboard {
+#dashboard {
   @media(width<=768px){
     display: none;
   }
@@ -145,7 +145,7 @@ display: flex; gap: 20px;
   background-color: white;
 }
 
-.imageCon {
+#imageCon {
   display: flex;
   gap: 20px;
   margin-top: 180px;
@@ -172,7 +172,7 @@ display: flex; gap: 20px;
   }
 }
 
-.imageConmobile {
+#imageConmobile {
   @media(width<768px) {
     margin-left: 75%;
     width: 200px;
@@ -192,13 +192,13 @@ display: flex; gap: 20px;
     display: none;
   }
 }
-.hello{
+#hello{
   @media(width>768px){
     display: none;
   }
 
 }
-.mobilehello{
+#mobilehello{
   @media(width<=768px){
     display: none;
   }
@@ -272,7 +272,7 @@ input[type="file"] {
   cursor: pointer;
 }
 
-.button {
+#button {
   @media(width<=605px){
     width:100%;
   }
@@ -284,7 +284,7 @@ input[type="file"] {
   background-color: blue;
 }
 
-.formContainer {
+#formContainer {
   @media(width<=768px){
     margin-left: 15%;
   }
@@ -297,7 +297,7 @@ input[type="file"] {
   justify-content: center;
   align-items: center;
 }
-.mobileboxfile{
+#mobileboxfile{
   @media(width<=605px){
     width:80%;
   }
@@ -319,7 +319,7 @@ input[type="file"] {
 
 }
 
-.mostouter {
+#mostouter {
   margin: 40px;
   /* background-color: rgb(243, 242, 242); */
 }
@@ -329,12 +329,12 @@ input[type="file"] {
   gap: 13%;
 }
 
-.field {
+#field {
   /* background-color: white; */
   border-radius: 15px;
 }
 
-.alltags {
+#alltags {
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
@@ -342,7 +342,7 @@ input[type="file"] {
   margin-top: 10px;
 }
 
-.itemseach {
+#itemseach {
   background-color: #605BFF;
   border-radius: 5px;
   padding: 3px 10px;
